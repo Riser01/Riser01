@@ -2,106 +2,108 @@
 
 # Prajwal Rao
 
-### **AI Agent & Distributed Systems Engineer**
-*Multi-Agent Orchestration (LangGraph) · Model Context Protocol (MCP) · Production-Grade LLM Systems*
+### **AI Systems Builder & Tech Enthusiast**
+*Tinkering at the frontier of Autonomous Agents · Stateful Orchestration (LangGraph) · Model Context Protocol (MCP) · LLM Systems*
 
 [![GitHub](https://img.shields.io/badge/GitHub-Riser01-181717?style=flat&logo=github)](https://github.com/Riser01)
-[![Email](https://img.shields.io/badge/Email-prajwalrao56%40gmail.com-D14836?style=flat&logo=gmail)](mailto:prajwalrao56@gmail.com)
-[![Location](https://img.shields.io/badge/Location-India%20(Open%20to%20Remote)-blue?style=flat)](https://github.com/Riser01)
-[![Status](https://img.shields.io/badge/Status-Actively%20Interviewing-success?style=flat)](#contact--collaboration)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-prajwal--rao--d-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/prajwal-rao-d/)
+[![Focus](https://img.shields.io/badge/Focus-Multi--Agent%20Systems%20%26%20Frontier%20AI-blueviolet?style=flat)](#what-im-exploring)
+[![Stack](https://img.shields.io/badge/Stack-LangGraph%20%7C%20MCP%20%7C%20Gemini%202.0%20Flash-00C7B7?style=flat)](#tech-stack)
 
 ---
 
 ```
-"Agents are not prompts; they are state machines with tools, checkpoints, and rigorous evaluation."
+"Building systems that reason, remember, and act in the physical and digital world."
 ```
 
 </div>
 
 ---
 
-## ⚡ What I Build
+## ⚡ The Spark
 
-I design and deploy **autonomous multi-agent architectures**, **stateful orchestration graphs**, and **context-grounded LLM systems**. My work focuses on moving beyond naive single-prompt wrappers into deterministic, production-ready agent harnesses:
+Senior Applied Data Scientist by profession, open-source AI builder and tech enthusiast by obsession. 
 
-- **Stateful Cyclic Graphs (LangGraph):** Multi-agent coordination with memory checkpointers, human-in-the-loop approval gates, and parallel branch execution.
-- **Model Context Protocol (MCP):** Standards-compliant JSON-RPC stdio/SSE tool servers enforcing strict role-based boundaries (RBAC) and database concurrency.
-- **Anti-Sycophancy & Adversarial Evaluation:** Calibration pipelines that challenge shallow answers, detect hallucinations, and evaluate outputs against ground-truth rubrics.
+I'm deeply fascinated by the shift from passive next-token prediction to **proactive, stateful multi-agent systems** that can plan, coordinate, debate, and reliably interact with software and databases. My weekend builds focus on turning bleeding-edge ideas into runnable code — from cyclic deduction graphs in LangGraph to tool integration using Anthropic's Model Context Protocol (MCP), fine-tuning small models with LoRA/DPO, and building rigorous LLM-as-a-judge evaluation frameworks.
 
 ---
 
-## 🚀 Flagship & Featured Projects
+## 🧠 What I'm Exploring
+
+- **Stateful Cyclic Graphs (LangGraph):** Building multi-agent systems with independent memory checkpointers, parallel stateful nodes, dynamic routing, and human-in-the-loop validation.
+- **Model Context Protocol (MCP):** Implementing standards-compliant JSON-RPC agent tool servers that decouple reasoning from data stores while enforcing role-based boundaries (RBAC) and database concurrency.
+- **Agentic Evaluation & Anti-Sycophancy:** Designing automated evaluation harnesses (LLM-as-a-Judge, adversarial simulation panels, and benchmark validation) that test edge cases and prevent hallucination.
+- **Model Fine-Tuning & Distillation:** Experimenting with parameter-efficient fine-tuning (LoRA, QLoRA, DPO, GRPO) to distill high-reasoning capabilities into fast, localized open weights.
+
+---
+
+## 🚀 Featured Builds & Experiments
 
 ### 🥇 [Murder Mystery Engine & Autonomous Agent Arena](https://github.com/Riser01/Personal-Projects)
 > **Interactive multi-agent deduction game with independent stateful personas and forensic ground-truth validation.**
 
-- **Architecture:** `Plot Architect` → `Stateful Suspect Nodes` (parallel memory checkpointers) → `Clue Dropper Node` (keyword & intent trigger) → `Truth Keeper Node` (indictment validation).
-- **Key Capabilities:** Playable via interactive **Terminal CLI** (`python play.py`) and **Visual Web Arena** (`python app.py`). Features zero-friction deterministic simulation + live **Gemini 2.0 Flash**.
-- **Tech Stack:** `Python 3.12`, `LangGraph`, `Gemini 2.0 Flash`, `FastAPI`, `Pytest (13 tests passing)`.
+- **Concept:** Every suspect is an autonomous, stateful LangGraph node with their own personality, secrets, and alibis. The user interrogates them as detective, unlocking physical/forensic clues in real time.
+- **Architecture:** `Plot Architect` → `Stateful Suspect Nodes` (parallel memory checkpointers) → `Clue Dropper Node` (intent & keyword recognition) → `Truth Keeper Node` (indictment deduction evaluation).
+- **Playable Anywhere:** Features both an interactive **Terminal CLI** (`python play.py`) and a sleek **Web Arena** (`python app.py`) with sub-second latency via **Gemini 2.0 Flash** and deterministic offline simulation.
+- **Stack:** `Python 3.12`, `LangGraph`, `Gemini 2.0 Flash`, `FastAPI`, `Pytest (18 passing tests)`.
 
 ```mermaid
 flowchart LR
     Detective[Detective Question] --> Router{Suspect Router}
-    Router --> SuspectA[Butler: Memory Checkpoint]
-    Router --> SuspectB[Heiress: Secret Guard]
-    Router --> SuspectC[Physician: Alibi Defense]
+    Router --> SuspectA[The Butler: Alibi Defense]
+    Router --> SuspectB[The Heiress: Secret Guard]
+    Router --> SuspectC[The Physician: Forensic Trail]
     SuspectA & SuspectB & SuspectC --> ClueEngine[Clue Dropper Agent]
     ClueEngine --> Evidence[(Forensic Locker)]
     Detective -->|Formal Indictment| TruthKeeper[Truth Keeper Node]
-    TruthKeeper --> Scorecard([Detective Scorecard])
+    TruthKeeper --> Scorecard([Detective Scorecard: Sherlock Rank])
 ```
 
 ---
 
-### 🥈 [PropAgent MCP: Multi-Agent Property Management](https://github.com/Riser01/Personal-Projects/tree/master/docs)
-> **Autonomous residential operations coordinating tenants, owners, and management via Gemini and MCP.**
+### 🥈 [PropAgent MCP: Multi-Agent Property Operations](https://github.com/Riser01/Personal-Projects/tree/master/docs)
+> **Autonomous residential operations coordinating tenants, owners, and management via Gemini and Model Context Protocol.**
 
-- **Architecture:** Multi-persona agent pipeline (`Tenant Agent`, `Owner Agent`, `Admin Agent`, `Supervisor FSM`) communicating over Model Context Protocol (MCP) with role-based access control.
-- **Key Capabilities:** Prevents double-booking elevator slots with lazy-TTL mutex locks; generates 6-digit OTP security gate passes; includes human-in-the-loop approval workflows.
-- **Tech Stack:** `Python 3.11+`, `FastAPI`, `Model Context Protocol (MCP)`, `aiosqlite WAL`, `Pytest (28 tests passing)`.
-
----
-
-### 🥉 [InterviewForge: AI Technical Interview Simulator](https://github.com/Riser01/interviewforge)
-> **Context-grounded mock technical interview simulator with calibrated multi-turn pushback.**
-
-- **Architecture:** Ingests target company Job Descriptions and candidate resumes to calibrate interviewer rigor (FAANG Bar Raiser vs. Mentor), probing distributed system scale limits and failure modes.
-- **Tech Stack:** `Next.js 15`, `LangGraph.js`, `Gemini 2.0 Flash`, `Tailwind CSS`, `Vitest`.
+- **Concept:** Multi-persona agent pipeline (`Tenant Agent`, `Owner Agent`, `Admin Agent`, `Supervisor FSM`) communicating over MCP to manage apartment move logistics.
+- **Highlights:** Concurrency-safe service elevator reservation using lazy-TTL mutex locks; digital gate pass generation with 6-digit OTP verification; human-in-the-loop approval checkpoints.
+- **Stack:** `Python 3.11+`, `FastAPI`, `Model Context Protocol (MCP)`, `aiosqlite WAL`, `Pytest (28 tests passing)`.
 
 ---
 
-### 📊 [Residential Usage Prediction System](https://github.com/Riser01/residential-usage-prediction)
-> **Production ML pipeline predicting multi-target facility utilization with chronological cross-validation.**
+### 🥉 [InterviewForge: Technical Interview Simulator](https://github.com/Riser01/interviewforge)
+> **Context-grounded technical interview simulator with realistic interviewer personas and dynamic pushback.**
 
-- **Architecture:** Engineered feature extraction pipeline benchmarking LightGBM against historical baseline models, delivering measurable lift across all booking dimensions.
-- **Tech Stack:** `Python`, `Scikit-Learn`, `LightGBM`, `Pandas`, `Pytest`, `Automated CI Pipeline`.
+- **Concept:** Calibrates pushback against uploaded Job Descriptions and candidate resumes, probing distributed systems tradeoffs, sharding, and latency budgets without sycophantic praise.
+- **Stack:** `Next.js 15`, `LangGraph.js`, `Gemini 2.0 Flash`, `Tailwind CSS`, `Vitest`.
 
 ---
 
-## 🛠️ Technical Stack & Core Competencies
+### 📈 [Residential Usage Prediction System](https://github.com/Riser01/residential-usage-prediction)
+> **Multi-target machine learning pipeline forecasting facility utilization across residential communities.**
 
-| Domain | Technologies & Frameworks |
+- **Highlights:** Feature engineering pipeline benchmarking LightGBM against historical baseline models with chronological validation and automated CI quality gates.
+- **Stack:** `Python`, `Scikit-Learn`, `LightGBM`, `Pandas`, `Pytest`, `GitHub Actions`.
+
+---
+
+## 🛠️ Tech Stack & Toolkit
+
+| Category | Tools & Frameworks |
 |---|---|
-| **Agent Orchestration** | **LangGraph**, LangChain, StateGraph, Memory Checkpointers, Cyclic Topologies |
-| **Tooling & Protocols** | **Model Context Protocol (MCP)**, REST APIs, SSE Streaming, WebSocket |
-| **LLMs & GenAI** | **Google Gemini 2.0 Flash**, OpenAI GPT-4o, Claude 3.5 Sonnet, Structured Function Calling |
-| **Backend & Systems** | **Python 3.12**, **FastAPI**, Uvicorn, SQLite WAL, PostgreSQL, Redis |
-| **Frontend & UI** | **TypeScript**, Next.js, Tailwind CSS, Vanilla JS / HTML5 |
-| **Testing & CI/CD** | **Pytest**, Vitest, Playwright, GitHub Actions, Docker |
+| **Agent Orchestration** | **LangGraph**, LangChain, StateGraph, Memory Checkpointers, Copilot Studio, Semantic Kernel |
+| **Protocols & Tooling** | **Model Context Protocol (MCP)**, REST APIs, SSE Streaming, JSON-RPC 2.0, WebSocket |
+| **LLMs & GenAI** | **Google Gemini 2.0 Flash**, OpenAI GPT-4o / GPT-5, Claude 3.5 Sonnet, vLLM, RAG |
+| **Fine-Tuning & ML** | **PyTorch**, LoRA, QLoRA, DPO, GRPO, HuggingFace, Scikit-Learn, LightGBM |
+| **Backend & Persistence** | **Python 3.12**, **FastAPI**, Uvicorn, SQLite WAL, PostgreSQL, Redis, Qdrant |
+| **Frontend & Visualization** | **TypeScript**, Next.js, Tailwind CSS, Vanilla JS, HTML5 Canvas |
+| **Testing & MLOps** | **Pytest**, MLflow, Docker, GitHub Actions, Azure ML Studio, Databricks |
 
 ---
 
-## 🏛️ Engineering Philosophy
+## 🤝 Let's Connect
 
-1. **Verify Before Done:** No feature is complete without automated regression tests and reproducible CLI/web evidence.
-2. **Deterministic Fallbacks:** AI systems must fail gracefully. Every agent service includes deterministic mock modes for seamless offline evaluation.
-3. **Observability First:** Transparent state inspection, structured logs, and scorecards over black-box prompt chains.
+Always excited to chat about agentic architectures, autonomous systems, open-source AI tooling, or interesting research papers:
 
----
-
-## 📬 Contact & Collaboration
-
-- **Email:** [prajwalrao56@gmail.com](mailto:prajwalrao56@gmail.com)
+- **LinkedIn:** [linkedin.com/in/prajwal-rao-d](https://www.linkedin.com/in/prajwal-rao-d/)
 - **GitHub:** [@Riser01](https://github.com/Riser01)
-- **Location:** India (Available for Global Remote & Relocation)
-- **Role Focus:** Staff / Lead AI Engineer · AI Systems Architect · Agentic Workflows Lead
+- **Email:** [prajwalrao56@gmail.com](mailto:prajwalrao56@gmail.com)
